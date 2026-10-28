@@ -27,10 +27,10 @@ bash install-arch.sh
 |---|---|
 | Разметка | GPT: p1 ESP 300M FAT32, p2 /boot 1G ext4, p3 LUKS2 → BTRFS |
 | BTRFS | сабтомы `@` (/), `@home` (/home), `@swap` (/swap) |
-| Опции BTRFS | `noatime,compress=zstd:3,ssd,discard=async` |
+| Опции BTRFS | `noatime,compress=zstd:1,ssd,discard=async` |
 | Swap | 8G файл `/swap/swapfile` (NOCOW), `vm.swappiness=10` |
 | Загрузчик | GRUB (x86_64-efi) + grub-btrfs + snapper + snap-pac |
-| Ядро | `linux` + `intel-ucode`, early KMS `i915` |
+| Ядро | `linux` `linux-lts` + `intel-ucode`, early KMS `i915` |
 | Часовой пояс | Asia/Barnaul |
 | Локаль | `ru_RU.UTF-8` (основная), `en_US.UTF-8` |
 | Hostname | `rad-laptop` |
