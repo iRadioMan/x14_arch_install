@@ -81,7 +81,7 @@ PKGS_DESKTOP=(
 PKGS_APPS=(
   telegram-desktop qbittorrent audacious audacious-plugins
   obs-studio easyeffects lsp-plugins-lv2
-  libreoffice-fresh-ru smplayer opencode
+  libreoffice-fresh-ru smplayer opencode-desktop
 )
 
 AUR_PKGS=(google-chrome vesktop-bin photocraft-bin wordcraft-bin vscodium-bin)
@@ -419,7 +419,6 @@ for entry in "${LOCALES_TO_ENABLE[@]}"; do
 done
 locale-gen
 printf 'LANG=%s\n' "$LOCALE_PRIMARY" > /etc/locale.conf
-printf 'LC_MESSAGES=C\n' >> /etc/locale.conf
 printf 'KEYMAP=%s\n' "$CONSOLE_KEYMAP" > /etc/vconsole.conf
 
 echo "--- hostname"
