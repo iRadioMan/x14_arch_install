@@ -81,10 +81,10 @@ PKGS_DESKTOP=(
 PKGS_APPS=(
   telegram-desktop qbittorrent audacious audacious-plugins
   obs-studio easyeffects lsp-plugins-lv2
-  libreoffice-fresh-ru smplayer
+  libreoffice-fresh-ru smplayer opencode
 )
 
-AUR_PKGS=(google-chrome vesktop-bin)
+AUR_PKGS=(google-chrome vesktop-bin photocraft-bin wordcraft-bin vscodium-bin)
 
 # -----------------------------------------------------------------------------
 #  Вспомогательное
